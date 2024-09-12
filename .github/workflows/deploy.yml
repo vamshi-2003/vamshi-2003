@@ -1,9 +1,10 @@
-name: Deploy static content to Pages
+name: Deploy static content to GitHub Pages
 
 on:
   push:
-    branches: ['main']  # Adjust if you're using a different branch
-  workflow_dispatch:
+    branches: ['main']  # This can be any branch you're working on
+
+  workflow_dispatch:  # Allows manual trigger of the workflow
 
 permissions:
   contents: read
@@ -32,11 +33,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./portfolio  # Use the portfolio directory
+        working-directory: ./portfolio  # Specify the subdirectory
 
       - name: Build the project
         run: npm run build
-        working-directory: ./portfolio  # Use the portfolio directory
+        working-directory: ./portfolio  # Specify the subdirectory
 
       - name: Setup Pages deployment
         uses: actions/configure-pages@v4
