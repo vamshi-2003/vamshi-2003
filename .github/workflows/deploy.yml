@@ -33,11 +33,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./portfolio  # Specify the subdirectory
+        working-directory: ./portfolio  # Specify the subdirectory to find package-lock.json
 
       - name: Build the project
         run: npm run build
-        working-directory: ./portfolio  # Specify the subdirectory
+        working-directory: ./portfolio  # Specify the subdirectory for building
 
       - name: Setup Pages deployment
         uses: actions/configure-pages@v4
