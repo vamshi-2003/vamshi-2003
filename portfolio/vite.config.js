@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vamshi-2003/',  // Set the correct base URL
+  base: '/vamshi-2003/portfolio/',  // Ensure this is correct for GitHub Pages
   plugins: [react()],
 })
