@@ -2,7 +2,7 @@
 <a href="https://github.com/vamshi-2003/"># vamshi-2003</a>
  
  <h2>My personal Information</h2>
- <a href="https://vamshi-2003.github.io/portfolio/">Portfolio</a></h2>
+ <a href="https://vamshi-2003.github.io/">Portfolio</a></h2>
 
  <h2>progress</h2>
  
